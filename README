@@ -1,0 +1,25 @@
+Ciobanu Alin-Matei 325CB
+
+	P1.java
+	- din fiecare oras din care incep lorzii cautarea execut un bfs
+	- cat timp gasesc drum spre orasul 1 in care se ascunde robin
+	incerc sa blochez drumuri
+	- iau un nod din vectorul de parinti, daca acesta este continut in array-ul
+	de permutari, atunci blochez nodul curent si toate nodurile din permutare
+	situate inaintea acestuia; le elimin din vectorul de permutari.
+	- complexitatea algoritmului : O(K * N * M^2)
+
+	P2.java
+	- folosesc algoritmul pentru drumuri minime Bellman Ford optimizat pentru
+	a se incadra in timp
+	- pentru optimizare folosesc o coada in care tin nodurile
+	- cat timp pot relaxa muchii si coada nu este goala atunci relaxez muchiile
+	- complexitatea este : O(N * M)
+
+	P3.java
+	- ca si la P2 folosesc algoritmul Bellman Ford implementat cu coada
+	- nu caut sa relaxez muchiile astfel incat sa fie costul minim, ci vreau
+	sa-mi maximizez energia
+	- astfel la initializari d[node] reprezinta energia maxima care poate
+	sa-mi ramana pe drumul optim de la source la node
+	- complexitate : O(N * M)
